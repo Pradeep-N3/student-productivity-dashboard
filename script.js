@@ -14,6 +14,10 @@ addTaskButton.addEventListener("click", function () {
 
     task.textContent = taskText;
 
+    task.addEventListener("click", function () {
+        task.classList.toggle("completed");
+    });
+
     taskList.appendChild(task);
 
     taskInput.value = "";
